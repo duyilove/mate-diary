@@ -1,169 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="light scroll-smooth" dir="ltr">
+    
 <head>
-    <meta charset="utf-8">
-    <title>Welcome - My Digital Diary</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <meta charset="UTF-8" />
+        <title>Welcome - My Digital Diary</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- LOAD CSS FILES -->
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-</head>
+        <!-- Css -->
+        <link href="assets/libs/tiny-slider/tiny-slider.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/icons.css" />
+        <link rel="stylesheet" href="assets/css/tailwind.css" />
 
-<body>
-    <div id="preloader"></div>
-    <div id="wrapper">
+    </head>
+    
+    <body class="font-nunito text-base text-black dark:text-white dark:bg-slate-900">
+       
+        <!-- Start Navbar -->
+        <nav id="topnav" class="defaultscroll is-sticky">
+            <div class="container">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                    <img src="assets/images/logo-dark.png" class="inline-block dark:hidden" alt="">
+                </a>
 
-        <!-- content begin -->
-        <div id="content" class="no-padding">
-			<!-- section begin -->
-            <section id="section-intro" class="no-padding autoheight light-text" data-stellar-background-ratio="0.5">
-                <div class="center-y">
-                    <div class="inner text-center">
-                        <div class="sub-intro-text"><span>Keep your daily activities and ideas recorded securely</span></div>
-                        <div class="divider-double"></div>
-                        <div class="type-wrap title big">
-                            <div class="typed-strinsgs">
-                                <p>My Digital <br><br><br>Diary</p>
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
-                            <span class="typded"></span>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+
+                <!--Login button Start-->
+                <ul class="buy-button list-none mb-0">
+                    <li class="inline ps-1 mb-0">
+                        <a href="login.php" target="_blank" class="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white"><i data-feather="key" class="h-4 w-4"></i></a>
+                    </li>
+                </ul>
+                <!--Login button End-->
+
+                <div id="navigation">
+                    <ul class="navigation-menu nav-dark">
+                        <li><a href="index.html" class="sub-menu-item">Home</a></li>
+                        <li><a href="#how-it-works" class="sub-menu-item">How It Works</a></li>
+                        <li><a href="#testimonials" class="sub-menu-item">Testimonials</a></li>
+                    </ul>
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </nav><!--end header-->
+        <!-- End Navbar -->
+
+        <!-- Start Hero -->
+        <section class="relative table w-full py-36 lg:py-44">
+            <div class="container">
+                <div class="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
+                    <div class="md:col-span-7">
+                        <div class="me-6">
+                            <h4 class="font-semibold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white">My Digital <span class="text-indigo-600">Diary</span></h4>
+                            <p class="text-slate-400 text-lg max-w-xl">Keep your daily activities and ideas recorded securely</p>
+                        
+                            <div class="mt-6">
+                                <a href="register.php" class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md me-2 mt-2"><i class="uil uil-envelope"></i> Get Started</a>
+                                <a href="login.php" class="btn bg-transparent hover:bg-indigo-600 border-indigo-600 text-indigo-600 hover:text-white rounded-md mt-2"><i class="uil uil-book-alt"></i> Login</a>
+                            </div>
                         </div>
-						
-						<div class="divider-single"></div>
-                        <a class="btn btn-slider" href="register.php">Get Started</a>&nbsp;&nbsp;<a class="btn btn-border-slider" href="login.php">Login</a>
-                        <div class="divider-double"></div>
+                    </div><!--end col-->
+
+                    <div class="md:col-span-5">
+                        <img src="assets/images/illustrator/SEO_SVG.svg" alt="">
+                    </div><!--end col-->
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- End Hero -->
+
+        
+        <!-- Start -->
+        <a name="how-it-works"></a>
+        <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
+            <div class="container">
+                <div class="grid grid-cols-1 pb-8 text-center">
+                    <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">How It Works</h3>
+
+                    <p class="text-slate-400 max-w-xl mx-auto">Start working with a clear digital mindset.</p>
+                </div><!--end grid-->
+
+                <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center mt-10 gap-[30px]">
+                    <div class="lg:col-span-5">
+                        <img src="assets/images/illustrator/development.svg" alt="">
                     </div>
-                </div>
-            </section>
-            <!-- section close -->
-			
+                    <div class="lg:col-span-7 mt-8 md:mt-0">
+                        <div class="lg:ms-10">
+                            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Change the way you take notes</h3>
+                            <p class="text-slate-400 max-w-xl">Wherever you are on the planet, all you need is internet access. Record your daily activities and ideas in a digital, simple and precise form.</p>
+
+                            <ul class="list-none text-slate-400 mt-4">
+                                <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> - Create an account</li>
+                                <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> - Login to your account</li>
+                                <li class="mb-1 flex"><i class="uil uil-check-circle text-indigo-600 text-xl me-2"></i> - Start taking notes</li>
+                            </ul>
+
+                            <div class="mt-4">
+                                <a href="register.php" class="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out">Register Now<i class="uil uil-angle-right-b align-middle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+
             
-			<!-- section begin -->
-            <section id="section-welcome">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                        <img src="img/diary1.png" class="img-responsive" alt="">
-                        <div class="divider-single"></div>
-                        <h2>Great for your brain</h2>
-                        <div class="tiny-border"></div>
-                        <p>The act of writing something down with a pen and paper seems to be better for learning and forming memories. A 2014 study into students taking class notes on laptops versus writing them out longhand found that those on laptops “performed worse on conceptual questions”, due to the level of the brain’s engagement. It seems writing by hand forces you to re-frame and process your thoughts more deeply. So, using your paper diary could help you remember your scheduling far better, or help you think out that big project more coherently.</p>
+        </section><!--end section-->
+        <!-- End -->
 
-                    </div>
-                    <div class="col-md-6">
-                        <img src="img/diary2.jpeg" class="img-responsive" alt="">
-                        <div class="divider-single"></div>
-                        <h2>The Tactile Nature of Paper</h2>
-                        <div class="tiny-border"></div>
+        <!-- Start -->
+        <a name="testimonials"></a>
+        <section class="relative md:py-24 py-16">
+            <div class="container">
+                <div class="grid grid-cols-1 pb-8 text-center">
+                    <h6 class="mb-4 text-base font-medium text-indigo-600">We believe in you, you should too</h6>
+                    <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">What our users have to say</h3>
 
-                        <p>The physical object of a quality diary feels great in your hands. Paper smells good and just riffling the pages produces a feeling of calm. Most of us grew up with books, notepads, and the like, so a paper diary produces a satisfying nostalgic effect that is good for the soul!</p>
-                    </div>
+                </div><!--end grid-->
 
-                        <div class="clearfix"></div>
-
-                    </div>
-                </div>
-            </section>
-			<!-- section close -->
-			
-			<!-- section begin -->
-			<section id="explore-2" class="side-bg light-text">
-                <div class="col-md-6 col-md-offset-6 pull-right image-container">
-                    <div class="background-image"></div>
-                </div>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="inner-padding">
-                                <div id="testi-carousel" class="testi-slider wow fadeIn" data-wow-delay="0s" data-wow-duration="1s">
-                                    <div class="item">
-                                        <blockquote>
-                                            This is a very awesome application. I enjoy using it. This is a very awesome application. I enjoy using it. This is a very awesome application. I enjoy using it. This is a very awesome application. I enjoy using it. 
-
-                                        </blockquote>
-                                        <span class="testi-by">Alex Rian</span>
+                <div class="grid relative grid-cols-1 mt-8">
+                    <div class="tiny-two-item">
+                        <div class="tiny-slide">
+                            <div class="lg:flex p-6 lg:p-0 relative rounded-md shadow dark:shadow-gray-800 overflow-hidden m-2">
+                                <img class="w-24 h-24 lg:w-48 lg:h-auto lg:rounded-none rounded-full mx-auto" src="assets/images/t01.jpg" alt="" width="384" height="512">
+                                <div class="pt-6 lg:p-6 text-center ltr:lg:text-left rtl:lg:text-right space-y-4">
+                                    <p class="text-base text-slate-400"> "
+                                        This is a very awesome application. I enjoy using it. This is a very awesome application. I enjoy using it. 
+                                        " </p>
+                                    
+                                    <div>
+                                        <span class="text-indigo-600 block mb-1">Thomas Jordan</span>
                                     </div>
-                                    <div class="item">
-                                        <blockquote>
-                                            This is a very awesome application. I enjoy using it. This is a very awesome application. I enjoy using it. This is a very awesome application. I enjoy using it. This is a very awesome application. I enjoy using it. 
-
-                                        </blockquote>
-                                        <span class="testi-by">Elon Gary</span>
-                                    </div>
-                                    <div class="item">
-                                        <blockquote>
-                                            This is a very awesome application. I enjoy using it. This is a very awesome application. I enjoy using it. This is a very awesome application. I enjoy using it. This is a very awesome application. I enjoy using it. 
-
-                                        </blockquote>
-
-                                        <span class="testi-by">Mary Yohanna</span>
-                                    </div>
-
                                 </div>
                             </div>
-
+                        </div>
+                        <div class="tiny-slide">
+                            <div class="lg:flex p-6 lg:p-0 relative rounded-md shadow dark:shadow-gray-800 overflow-hidden m-2">
+                                <img class="w-24 h-24 lg:w-48 lg:h-auto lg:rounded-none rounded-full mx-auto" src="assets/images/t02.jpg" alt="" width="384" height="512">
+                                <div class="pt-6 lg:p-6 text-center ltr:lg:text-left rtl:lg:text-right space-y-4">
+                                    <p class="text-base text-slate-400"> "
+                                        This is a very awesome application. I enjoy using it. This is a very awesome application. I enjoy using it. 
+                                        " </p>                                    
+                                    <div>
+                                        <span class="text-indigo-600 block mb-1">Carl Silver</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tiny-slide">
+                            <div class="lg:flex p-6 lg:p-0 relative rounded-md shadow dark:shadow-gray-800 overflow-hidden m-2">
+                                <img class="w-24 h-24 lg:w-48 lg:h-auto lg:rounded-none rounded-full mx-auto" src="assets/images/t03.jpg" alt="" width="384" height="512">
+                                <div class="pt-6 lg:p-6 text-center ltr:lg:text-left rtl:lg:text-right space-y-4">
+                                    <p class="text-base text-slate-400"> "
+                                        This is a very awesome application. I enjoy using it. This is a very awesome application. I enjoy using it. 
+                                        " </p>                                    
+                                    <div>
+                                        <span class="text-indigo-600 block mb-1">Barbara Ingress</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div><!--end grid-->
+            </div><!--end container-->
+        </section>
 
-                <div class="clearfix"></div>
-            </section>
-			<!-- section close -->
-			
-
-
-
-            <div class="call-to-action text-light">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-9">
-                            <h2>Overcome the limitations of paper. Embrace the possibilities of a digital diary</h2>
+        <!-- Footer Start -->
+        <footer class="footer bg-dark-footer relative text-gray-200 dark:text-gray-200">    
+            <div class="py-[30px] px-0 border-t border-slate-800">
+                <div class="container text-center">
+                    <div class="grid md:grid-cols-2 items-center">
+                        <div class="ltr:md:text-left rtl:md:text-right text-center">
+                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> My Digital Diary</p>
                         </div>
 
-                        <div class="col-md-3">
-                            <a href="register.php" class="btn-border-light">Get Started</a>
-                        </div>
-                    </div>
-                </div>
+                    </div><!--end grid-->
+                </div><!--end container-->
             </div>
+        </footer><!--end footer-->
+        <!-- Footer End -->
 
-        </div>
-        <!-- footer begin -->
-        <footer>
-            
-            <div class="divider"></div>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <div class="spacer-single"></div>
-                        &copy; Copyright 2023 - My Digital Diary
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- footer close -->
-    </div>
 
-    <!-- LOAD JS FILES -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/easing.js"></script>
-    <script src="js/jquery.ui.totop.js"></script>
-    <script src="js/ender.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/jquery.fitvids.js"></script>
-    <script src="js/jquery.plugin.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.stellar.js"></script>
-    <script src="js/typed.js"></script>
-    <script src="js/jquery.scrollto.js"></script>
-    <script src="js/custom.js"></script>
+        <!-- JAVASCRIPTS -->
+        <script src="assets/libs/tiny-slider/min/tiny-slider.js"></script>
+        <script src="assets/libs/feather-icons/feather.min.js"></script>
+        <script src="assets/js/plugins.init.js"></script>
+        <script src="assets/js/app.js"></script>
+        <!-- JAVASCRIPTS -->
+    </body>
 
-</body>
 </html>
